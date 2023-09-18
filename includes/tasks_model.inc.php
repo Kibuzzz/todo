@@ -9,3 +9,12 @@ function add_task(object $pdo, string $task_name)
     $stmt->bindParam(':task_name', $task_name);
     $stmt->execute();
 }
+
+function get_tasks(object $pdo)
+{
+    $sql = "SELECT * FROM tasks";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $results;
+}
