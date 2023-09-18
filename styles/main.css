@@ -57,3 +57,19 @@ li {
     cursor: pointer;
     font-size: 14px;
 }
+
+/* Define a CSS class for the error container */
+.error-container {
+    background-color: #f8d7da;
+    /* Light red background color */
+    color: #721c24;
+    /* Dark red text color */
+    padding: 10px;
+    /* Add some padding to the container */
+    border: 1px solid #f5c6cb;
+    /* Add a border */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-bottom: 10px;
+    /* Add some margin at the bottom */
+}

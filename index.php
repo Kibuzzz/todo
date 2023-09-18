@@ -1,3 +1,8 @@
+<?php
+require_once "./includes/config_sessions.inc.php";
+require_once "./includes/tasks_view.inc.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,12 +21,10 @@
             <button id="addTask">Add</button>
         </form>
 
-        <!-- Добавляем список заданий ниже формы -->
         <ul class="task-list">
-            <li>Sample Task 1</li>
-            <li>Sample Task 2</li>
-            <li>Sample Task 3</li>
-            <!-- Вы можете добавить больше элементов <li> для отображения реальных заданий -->
+            <?php
+            render_tasks();
+            ?>
         </ul>
     </div>
 </body>
